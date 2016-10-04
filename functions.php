@@ -47,16 +47,24 @@ function pwp_navigation_menus_pure_li_a($output) {
 }
 add_filter('wp_nav_menu', 'pwp_navigation_menus_pure_li_a');
 
-/* Adds 'pure-form' class to the default search widget form, and the search form displayed by get_search_form() */
+/* Adds 'pure-form' and 'pure-form-stacked' classes to the default search widget form, and the search form displayed by get_search_form() */
 function pwp_search_form_pure($output) {
-	$output = preg_replace('/class="searchform"/', 'class="searchform pure-form"', $output);
+	$output = preg_replace('/class="searchform"/', 'class="searchform pure-form pure-form-stacked"', $output);
 	return $output;
 }
 add_filter('get_search_form', 'pwp_search_form_pure');
 
-/* Adds 'pure-form' class to the default comments template form displayed by comments_template()*/
+/* Adds 'pure-button' class to the default search button */
+function pwp_search_button_pure($output) {
+	$output = preg_replace('/id="searchsubmit"/', 'id="searchsubmit" class="pure-button"', $output);
+	return $output;
+}
+add_filter('get_search_form', 'pwp_search_button_pure');
+
+/* Adds 'pure-form', 'pure-form-stacked' and 'pure-button' classes to the default comments template form displayed by comments_template()*/
 function pwp_comment_form_pure( $args ) {
   $args['class_form'] = 'pure-form pure-form-stacked';
+	$args['class_submit'] = 'pure-button';
   return $args;
 }
 add_filter( 'comment_form_defaults', 'pwp_comment_form_pure' );
