@@ -33,7 +33,8 @@ add_action( 'widgets_init', 'pwp_widgets_init' );
 /* Creates the Header menu */
 function pwp_navigation_menus_init() {
 	register_nav_menus( array(
-		'header_menu' => 'Header Navigation Menu'
+		'header_menu' => 'Header Navigation Menu',
+		'footer_menu' => 'Footer Navigation Menu',
 	) );
 }
 add_action( 'init', 'pwp_navigation_menus_init' );

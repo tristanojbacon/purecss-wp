@@ -26,7 +26,8 @@ a {
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;
+    color:#6b94bf;
 }
 
 h3 {
@@ -43,12 +44,16 @@ h3 {
     padding: 0;
 }
 .header {
-  background:#2d3e50;
+  background: #2d3e50;
 }
 .pure-menu-heading {
-  color:white;
-  font-weight:bold;
-  font-size:120%;
+  color: white;
+  font-weight: bold;
+  font-size: 120%;
+}
+.pure-menu-heading:hover {
+  color: white;
+  text-decoration: none;
 }
 .site-title,
 .site-tagline {
@@ -90,33 +95,8 @@ h3 {
   margin-top:0;
 }
 
-#navigation {
+#header-navigation {
   float:right;
-}
-
-.nav-list {
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-.nav-item {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-}
-.nav-item a {
-    background: transparent;
-    border: 2px solid rgb(176, 202, 219);
-    color: #fff;
-    margin-top: 1em;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-size: 85%;
-}
-.nav-item a:hover,
-.nav-item a:focus {
-    border: 2px solid rgb(61, 146, 201);
-    text-decoration: none;
 }
 
 .main {
@@ -173,12 +153,15 @@ h3 {
     padding: 1em 0;
 }
 .footer a {
-    color: #ccc;
+    color: #77a4d3;
     font-size: 80%;
 }
 .footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
+.footer .pure-menu a:focus,
+.footer .pure-menu-link:hover,
+.footer .pure-menu-link:focus {
     background: none;
+    color:#6b94bf;
 }
 
 @media (min-width: 48em) {
