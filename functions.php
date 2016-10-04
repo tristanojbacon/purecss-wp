@@ -76,6 +76,18 @@ function pwp_excerpt_class($output) {
 }
 add_filter('the_excerpt', 'pwp_excerpt_class');
 
+/* Limits post excerpts to 20 words */
+function pwp_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'pwp_excerpt_length', 999 );
+
+function pwp_excerpt_continuereading($more) {
+    global $post;
+    return '... <a class="continue-reading" href="'. get_permalink($post->ID) . '"> &#10148; </a>';
+}
+add_filter('excerpt_more', 'pwp_excerpt_continuereading');
+
 /* Returns either the URL or the Alt text for a post's featured image */
 function pwp_featured_image($post_id, $output) {
 
