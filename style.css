@@ -1,0 +1,196 @@
+/*
+Theme Name: Pure WP
+Theme URI: http://tristanbacon.com/pure-wp
+Author: Tristan Bacon
+Author URI: https://github.com/tristanojbacon
+Description: A WordPress theme skeleton using the Pure CSS framework by Yahoo. To extend this theme with more Pure CSS goodness, check out http://purecss.io.
+Version: 0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pure-wp
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  color:#444;
+  font-size:16px;
+}
+
+a {
+    text-decoration: none;
+    color: #77a4d3;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+.header {
+  background:#2d3e50;
+}
+.pure-menu-heading {
+  color:white;
+  font-weight:bold;
+  font-size:120%;
+}
+.site-title,
+.site-tagline {
+    margin:0;
+    color:white;
+}
+.site-title {
+  font-size:24px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.site-tagline {
+  text-transform: none;
+  font-weight:300;
+  color:#588ec7;
+}
+.pure-menu-link {
+  color:white;
+}
+.pure-menu-link:hover {
+  background:none;
+  color:white;
+  text-decoration:none;
+}
+
+.container {
+  padding:20px
+}
+
+#sidebar {
+  border-left:1px solid #ccc
+}
+
+#sidebar .widget {
+  border-bottom:1px solid #ccc;
+  padding:20px;
+}
+#sidebar .widget-title {
+  margin-top:0;
+}
+
+#navigation {
+  float:right;
+}
+
+.nav-list {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.main {
+
+}
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-categories {
+    margin: 0;
+}
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+@media (min-width: 48em) {
+    .content {
+
+    }
+
+    .header {
+
+    }
+
+    .sidebar {
+
+    }
+}
