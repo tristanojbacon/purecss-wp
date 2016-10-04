@@ -59,6 +59,7 @@ function pwp_excerpt_class($output) {
 }
 add_filter('the_excerpt', 'pwp_excerpt_class');
 
+/* Returns either the URL or the Alt text for a post's featured image */
 function pwp_featured_image($post_id, $output) {
 
 	$featured_image = get_post_thumbnail_id($post_id);
