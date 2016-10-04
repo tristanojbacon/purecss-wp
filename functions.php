@@ -1,6 +1,6 @@
 <?php
 
-/* Imports the main style.css and Pure CSS styles */
+/* Imports the main style.css and PureCSS styles */
 function theme_styles() {
 
 	wp_enqueue_style( 'pure_css', get_template_directory_uri() . '/css/pure-min.css' );
@@ -38,7 +38,7 @@ function pwp_navigation_menus_init() {
 }
 add_action( 'init', 'pwp_navigation_menus_init' );
 
-/* Adds Pure CSS classes to nav menu <li> and <a> tags output by wp_nav_menu() calls */
+/* Adds PureCSS classes to nav menu <li> and <a> tags output by wp_nav_menu() calls */
 function pwp_navigation_menus_pure_li_a($output) {
   $output = preg_replace('/class="menu-item/', 'class="pure-menu-item', $output);
 	$output = preg_replace('/a href/', 'a class="pure-menu-link" href', $output);
