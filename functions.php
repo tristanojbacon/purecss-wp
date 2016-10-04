@@ -53,6 +53,7 @@ function pwp_search_form_pure($output) {
 }
 add_filter('get_search_form', 'pwp_search_form_pure');
 
+/* Adds 'pot-excerpt' class to excerpt <p> tags */
 function pwp_excerpt_class($output) {
 	$output = preg_replace('/<p/', '<p class="post-excerpt"', $output);
 	return $output;
