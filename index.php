@@ -3,7 +3,7 @@
     <div id="main" class="pure-u-1 pure-u-md-3-4">
       <div class="container">
 
-            <!-- A wrapper for all the blog posts -->
+            <!-- A wrapper for all blog posts -->
             <div class="posts">
                 <h1 class="content-subhead">Latest Posts</h1>
 
@@ -29,9 +29,10 @@
                     </header>
                 </section>
                 <?php endwhile; endif; ?>
-            </div>
 
-          </div>
-          </div>
+            </div> <!-- /.posts -->
+
+        </div> <!-- /.container -->
+    </div> <!-- /#main -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
