@@ -12,3 +12,5 @@ Functions for PureCSS inclusions
 General
 
 * `<p>` tag that wraps `the_excerpt()` output has been given a `post-excerpt` class for better targeting
+* `pwp_featured_image($post_id, $output)` returns either the `src` URL or the `alt` tag for the current post's featured image. Set `$output` to either `'url'` or `'alt'` for the desired output.
+E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.com/image.jpg`.
