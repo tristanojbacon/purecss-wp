@@ -53,7 +53,14 @@ function pwp_search_form_pure($output) {
 }
 add_filter('get_search_form', 'pwp_search_form_pure');
 
-/* Adds 'pot-excerpt' class to excerpt <p> tags */
+/* Adds 'pure-form' class to the default comments template form displayed by comments_template()*/
+function pwp_comment_form_pure( $args ) {
+  $args['class_form'] = 'pure-form pure-form-stacked';
+  return $args;
+}
+add_filter( 'comment_form_defaults', 'pwp_comment_form_pure' );
+
+/* Adds 'post-excerpt' class to excerpt <p> tags */
 function pwp_excerpt_class($output) {
 	$output = preg_replace('/<p/', '<p class="post-excerpt"', $output);
 	return $output;
