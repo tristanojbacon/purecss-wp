@@ -17,13 +17,8 @@ Template Name: Home - One
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
               <section class="post">
                   <header class="post-header pure-g">
-                         <?php
-                                $thumbnail_id = get_post_thumbnail_id();
-                                $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-                                $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
-                        ?>
                         <div class="post-image pure-u-1 pure-u-md-1-2">
-                          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" class="pure-img" alt="<?php echo $thumbnail_meta; ?>"></a>
+                          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo pwp_featured_image($post->ID, 'url'); ?>" class="pure-img" alt="<?php echo pwp_featured_image($post->ID, 'alt'); ?>"/></a>
                         </div>
                         <div class="post-info pure-u-1 pure-u-md-1-2">
                           <div class="container">

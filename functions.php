@@ -58,4 +58,27 @@ function pwp_excerpt_class($output) {
 	return $output;
 }
 add_filter('the_excerpt', 'pwp_excerpt_class');
+
+function pwp_featured_image($post_id, $output) {
+
+	$featured_image = get_post_thumbnail_id($post_id);
+
+	switch ($output) {
+		case 'url':
+			$output = wp_get_attachment_image_src( $featured_image, 'thumbnail-size', true );
+			return $output[0];
+			break;
+		case 'alt':
+			$output = get_post_meta( $featured_image, '_wp_attachment_image_alt', true);
+			return $output;
+			break;
+		default:
+			$output = wp_get_attachment_image_src( $featured_image, 'thumbnail-size', true );
+			return $output[0];
+			break;
+}
+
+
+
+}
 ?>

@@ -11,13 +11,8 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <section class="post">
                   <header class="post-header">
-                         <?php
-                            $thumbnail_id = get_post_thumbnail_id();
-                            $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-                            $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
-                        ?>
-                      <p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" class="pure-img" alt="<?php echo $thumbnail_meta; ?>"></p>
 
+                      <p class="featured-image"><img src="<?php echo pwp_featured_image($post->ID, 'url'); ?>" class="pure-img" alt="<?php echo pwp_featured_image($post->ID, 'alt'); ?>"/></p>
 
                       <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
@@ -34,7 +29,7 @@
                 <hr>
                 <?php comments_template(); ?>
                 <?php endwhile; endif; ?>
-                
+
             </div> <!-- /.posts -->
 
         </div> <!-- /.container -->
