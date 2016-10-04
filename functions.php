@@ -82,6 +82,7 @@ function pwp_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'pwp_excerpt_length', 999 );
 
+/* Replaces the default [...] at the end of an excerpt with a nice arrow :) */
 function pwp_excerpt_continuereading($more) {
     global $post;
     return '... <a class="continue-reading" href="'. get_permalink($post->ID) . '"> &#10148; </a>';
@@ -106,9 +107,7 @@ function pwp_featured_image($post_id, $output) {
 			$output = wp_get_attachment_image_src( $featured_image, 'thumbnail-size', true );
 			return $output[0];
 			break;
-}
-
-
+	}
 
 }
 ?>
