@@ -4,34 +4,24 @@
         <div class="container">
 
             <!-- A wrapper for all blog posts -->
-            <div class="posts">
-
+            <div class="page">
                 <!-- The actual blog post -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <section class="post">
-                  <header class="post-header">
-
+                <section class="page">
+                  <header class="page-header">
                       <?php if ( has_post_thumbnail() ) { ?>
                       <p class="featured-image"><img src="<?php echo pwp_featured_image($post->ID, 'url'); ?>" class="pure-img" alt="<?php echo pwp_featured_image($post->ID, 'alt'); ?>"/></p>
                       <?php } ?>
-
-                      <h1 class="post-title"><?php the_title(); ?></h1>
-
-                      <p class="post-meta">
-                          By <a href="#" class="post-author"><?php the_author(); ?> </a> in <?php the_category( ', ' ); ?> on <?php echo the_time('l, F jS, Y');?>
-                      </p>
-
+                      <h1 class="page-title"><?php the_title(); ?></h1>
                   </header>
 
-                    <div class="post-description">
-                            <?php the_content(); ?>
+                    <div class="page-content">
+                        <?php the_content(); ?>
                     </div>
                 </section>
-                <hr>
-                <?php comments_template(); ?>
                 <?php endwhile; endif; ?>
 
-            </div> <!-- /.posts -->
+            </div> <!-- /.page -->
 
         </div> <!-- /.container -->
     </div> <!-- /#main -->
