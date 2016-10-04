@@ -129,6 +129,9 @@ p {
 .post {
   padding-bottom: 2em;
 }
+.post-info .container {
+  padding: 0px 30px;
+}
 .post-title {
   color: #222;
   margin-bottom: 0.2em;

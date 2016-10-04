@@ -11,10 +11,10 @@
                 <section class="post">
                     <header class="post-header pure-g">
                           <?php if ( has_post_thumbnail() ) { ?>
-                            <div class="post-image pure-u-1 pure-u-sm-1 pure-u-md-1-2">
+                            <div class="post-image pure-u-1 pure-u-sm-1 pure-u-lg-1-2 pure-u-xl-1-3">
                               <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo pwp_featured_image($post->ID, 'url'); ?>" class="pure-img" alt="<?php echo pwp_featured_image($post->ID, 'alt'); ?>"/></a>
                             </div>
-                            <div class="post-info pure-u-1 pure-u-sm-1 pure-u-md-1-2">
+                            <div class="post-info pure-u-1 pure-u-sm-1 pure-u-lg-1-2 pure-u-xl-2-3">
                               <div class="container">
                                 <p class="post-meta"><?php echo the_time('jS F Y');?></p>
                                 <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
