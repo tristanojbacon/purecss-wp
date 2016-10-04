@@ -17,3 +17,13 @@ General functions
 * `<p>` tag that wraps `the_excerpt()` output has been given a `post-excerpt` class for better targeting
 * `pwp_featured_image($post_id, $output)` returns either the `src` URL or the `alt` tag for the current post's featured image. Set `$output` to either `'url'` or `'alt'` for the desired output.
 E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.com/image.jpg`.
+
+##To Do
+
+* Fix padding and margins in `single.php`
+* Style the footer
+* Include an auto-generated copyright notice in the footer
+* Apply category widget styles to tag widget
+* Create `archive.php`
+* Create `author.php`
+* Style post comments list
