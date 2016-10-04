@@ -10,9 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pure-wp
 */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,35 +21,48 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #77a4d3;
+  text-decoration: none;
+  color: #77a4d3;
 }
 a:hover,
 a:focus {
-    text-decoration: none;
-    color:#6b94bf;
+  text-decoration: none;
+  color:#6b94bf;
 }
-
+h1, h2, h3, h4, h5 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size:28px;
+  font-weight:600;
+}
 h3 {
-    font-weight: 100;
+  font-size:24px;
+  font-weight: 400;
 }
-
+p {
+  font-family: Georgia, serif;
+  line-height:26px;
+}
 /* LAYOUT CSS */
 .pure-img-responsive {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #layout {
-    padding: 0;
+  padding: 0;
 }
 .header {
   background: #2d3e50;
 }
+.header .pure-menu {
+  padding: 30px 20px;
+}
 .pure-menu-heading {
   color: white;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 26px;
 }
 .pure-menu-heading:hover {
   color: white;
@@ -57,8 +70,8 @@ h3 {
 }
 .site-title,
 .site-tagline {
-    margin:0;
-    color:white;
+  margin:0;
+  color:white;
 }
 .site-title {
   font-size:24px;
@@ -80,7 +93,7 @@ h3 {
 }
 
 .container {
-  padding:20px
+  padding: 30px;
 }
 
 #sidebar {
@@ -97,72 +110,78 @@ h3 {
 
 #header-navigation {
   float:right;
+  padding: .5em 1em;
 }
 
-.main {
-
-}
 .content-subhead {
-    text-transform: uppercase;
-    color: #aaa;
-    border-bottom: 1px solid #eee;
-    padding: 0.4em 0;
-    font-size: 80%;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
-.content {
-    padding: 2em 1em 0;
-}
-
+/*
+* Posts
+*/
 .post {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 .post-title {
-    font-size: 2em;
-    color: #222;
-    margin-bottom: 0.2em;
-    margin-top:0;
+  color: #222;
+  margin-bottom: 0.2em;
+  margin-top:0;
 }
 .post-avatar {
-    border-radius: 50px;
-    float: right;
-    margin-left: 1em;
+  border-radius: 50px;
+  float: right;
+  margin-left: 1em;
 }
 .post-meta {
-    color: #999;
-    font-size: 90%;
-    margin: 0;
+  color: #999;
+  font-size: 90%;
+  margin: 0;
 }
 
 .post-categories {
-    margin: 0;
+  margin: 0;
 }
 .post-images {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 .post-image-meta {
-    margin-top: -3.5em;
-    margin-left: 1em;
-    color: #fff;
-    text-shadow: 0 1px 1px #333;
+  margin-top: -3.5em;
+  margin-left: 1em;
+  color: #fff;
+  text-shadow: 0 1px 1px #333;
 }
 
+/*
+* Forms and Buttons
+*/
+.pure-button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+* Footer
+*/
 .footer {
-    text-align: center;
-    padding: 1em 0;
+  text-align: center;
+  padding: 1em 0;
 }
 .footer a {
-    color: #77a4d3;
-    font-size: 80%;
+  color: #77a4d3;
+  font-size: 80%;
 }
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus,
 .footer .pure-menu-link:hover,
 .footer .pure-menu-link:focus {
-    background: none;
-    color:#6b94bf;
+  background: none;
+  color:#6b94bf;
 }
 
 @media (min-width: 48em) {
