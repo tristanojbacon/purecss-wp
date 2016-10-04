@@ -27,3 +27,4 @@ E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.c
 * Create `archive.php`
 * Create `author.php`
 * Style post comments list
+* Add child themes(!)
