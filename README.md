@@ -2,6 +2,8 @@
 
 A simple WordPress blog theme built from the ground-up with Yahoo's [PureCSS framework](http://purecss.io) (v0.6.0).
 
+Here's [a screenshot](screenshot.png) of the theme in action, as of 04/10/16
+
 ##Notable features
 
 Functions for PureCSS inclusions
