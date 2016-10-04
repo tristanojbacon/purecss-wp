@@ -4,7 +4,7 @@
         <div class="container">
 
             <!-- A wrapper for all blog posts -->
-            <div class="page">
+            <div class="single-page">
                 <!-- The actual blog post -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <section class="page">
