@@ -69,9 +69,9 @@ function pwp_comment_form_pure( $args ) {
 }
 add_filter( 'comment_form_defaults', 'pwp_comment_form_pure' );
 
-/* Adds 'post-excerpt' class to excerpt <p> tags */
+/* Adds 'post-excerpt' class and schema tag to excerpt <p> tags */
 function pwp_excerpt_class($output) {
-	$output = preg_replace('/<p/', '<p class="post-excerpt"', $output);
+	$output = preg_replace('/<p/', '<p class="post-excerpt" itemprop="about"', $output);
 	return $output;
 }
 add_filter('the_excerpt', 'pwp_excerpt_class');
