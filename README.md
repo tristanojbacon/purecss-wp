@@ -28,4 +28,5 @@ E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.c
 * Create `author.php`
 * Style post comments list
 * Add Schema.org markup
+* Add OpenGraph tags
 * Add child themes(!)
