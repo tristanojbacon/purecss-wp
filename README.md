@@ -24,6 +24,7 @@ E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.c
 * Style the footer
 * Include an auto-generated copyright notice in the footer
 * Apply category widget styles to tag widget
+* Move post loop summary to own template
 * Create `archive.php`
 * Create `author.php`
 * Style post comments list
