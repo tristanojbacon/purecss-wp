@@ -1,10 +1,10 @@
-#PureCSS WP - WordPress Theme
+# PureCSS WP - WordPress Theme
 
 A simple WordPress blog theme built from the ground-up with Yahoo's [PureCSS framework](http://purecss.io) (v0.6.0).
 
 Here's [a screenshot](screenshot.png) of the theme in action, as of 04/10/16
 
-##Notable features
+## Notable features
 
 PureCSS-focussed functions
 
@@ -18,7 +18,7 @@ General functions
 * `pwp_featured_image($post_id, $output)` returns either the `src` URL or the `alt` tag for the current post's featured image. Set `$output` to either `'url'` or `'alt'` for the desired output.
 E.g., `echo pwp_featured_image($post->ID, 'url');` will output `http://example.com/image.jpg`.
 
-##To Do
+## To Do
 
 * Fix padding and margins in `single.php`
 * Style the footer
